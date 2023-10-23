@@ -1,23 +1,31 @@
- HEAD
+ 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="favicon.ico">
+  
     <!-- <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" re0l="estilo.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script defer src="js/jsDeportesHoy.js"></script>
-    <title>DeportesHoy</title>
+    <title>DeportesHoy  </title>
 </head>
 
 <body>
     <!-- //INICIO HEADER -->
     <header>
         <nav>
-            <h1>
-                <p> DeportesHoy</p>
-            </h1>
+            <section class="header-container">
+                <div class="header">
+                    <h1>
+                        <pre>DeportesHoy </pre>
+                        
+                    </h1>
+                    <img class="logoDeportesHoy" src="./img/logoweb.png" alt="isotipod de la marca">
+                   
+                </div>
                 <button id="boton-hamburguesa">
                     <span>&#9776;</span> Menú
                 </button>
@@ -31,6 +39,7 @@
                         <li class="navbar__item"> <a class="navbar__link" href="#Basket">Basket</a></li>
                     </ul>
                 </nav>
+            </section>   
         </nav>
     </header>
     <!-- FIN HEADER -->
@@ -38,188 +47,199 @@
     <!-- //INICIO MAIN -->
 
     <main>
-        <section class="hero">>
+        <section class="hero">
             <article Class="hero__content container">
                 <span Class="hero__span">
-                    <p Class="hero__text">    </p> 
-                    
-                    <h3 Class="hero__title">Todo lo que tenes que saber </h3>
-                    <p Class="hero__text"> de tu deporte favorito                </span>
-             </article>
+                    <p Class="hero__text"> </p>
+    
+                    <h2 Class="hero__title">Todo lo que tenes que saber </h2>
+                    <p Class="hero__text"> de tu deporte favorito
+                </span>
+            </article>
         </section>
-
-        <section class="container-carrousel">
-
-            
-                 <span class="scroll-left scroll-chevron"><</span>
-                 
-              <span class="scroll-right scroll-chevron">></span> 
+        
+        
+        <section class="container-carrousel">        
+            <span class="scroll-left scroll-chevron">< </span>         
+            <span class="scroll-right scroll-chevron">></span> 
                 <section class="carousel">
                     <div class="carousel__container">
                         <div class="carousel-item">
-                    <h2>
-                        Futbol hoy
-                    </h2>
-                                                <img class="carousel-item__img" src="img/lionel-messi-copa-del-mundo-11.webp" alt="Futbol">
                             
-                            <div class="carousel-item__details">
-                                
+                            <h2>Futbol hoy</h2>
+                            <img class="carousel-item__img" src="img/lionel-messi-copa-del-mundo-11.webp" alt="Futbol">
+                           
+                            <div class="carousel-item__details"> 
                                 <a href="Futbol">Ver mas</a>
-                            </div>
+                            </div> 
                         </div>
                         <div class="carousel-item">
                             <h2>Tenis hoy</h2>
-                            
                             <img class="carousel-item__img" src="img/del potro.jpg" alt="Tenis">
+                           
                             <div class="carousel-item__details">
-                                <a href="Tenis">Ver mas </a>  
-                                   
+                                <a class="carousel-item__details__link" href="Tenis">Ver mas </a>
+                
                             </div>
+                
                         </div>
-                        
-
+                
+                
                         <div class="carousel-item">
                             <h2>Rugby hoy
-
+                
                             </h2>
-                            <img class="carousel-item__img" src="img/creevy.jpg"
-                                alt="Rugby">
+                            <img class="carousel-item__img" src="img/creevy.jpg" alt="Rugby">
                             <div class="carousel-item__details">
                                 <a href="Rugby">Ver mas</a>
                             </div>
                         </div>
                         <div class="carousel-item">
-<h2>
-    Polo hoy
-</h2>
-                            <img class="carousel-item__img" src="img/cambiaso.jpg"
-                                alt="Polo">
-                            <div class="carousel-item__details">
-                                        <a href="Polo ">Ver mas</a>
-                            </div>   
+                            <h2>
+                                Polo hoy
+                            </h2>
+                            <img class="carousel-item__img" src="img/cambiaso.jpg" alt="Polo">
+                            <div class="carousel-item__details"> 
+                                <a href="Polo ">Ver mas</a>
+                            </div>
                         </div>
-
-                        
+                
+                
                         <div class="carousel-item">
                             <h2>
                                 Basket hoy
                             </h2>
-                            <img class="carousel-item__img"
-                                src="img/basket.png" alt="Basket">
-                           
-                            <div class="carousel-item__details">  
-                                                           <a href="Basket">Ver mas</a>
-                           
+                            <img class="carousel-item__img" src="img/basket.png" alt="Basket">
+                
+                            <div class="carousel-item__details">
+                                <a href="Basket">Ver mas</a>
+                
+                            </div>
                         </div>
-                    </div>
-                        
+                
                     </div>
                 </section>
-        </section>
-
-
-
-
+                </section>
+    
+                <section>
+                    <div class="carousel1-titulo">
+                        <h1> Accede a la informacion mas relevante de cada deporte  </h1>
+                </div>
+                </section>
+        
 <!-- 
 ACA EMPIEZAN LOS VIDEOS -->
-
+<section>
+    <div class="carousel1-titulo">
+        <h1> Revivi los mejores momentos de los deportes que te interesan </h1>
+</div>
+</section>
 
    
 
     <section class="container-carrousel">
 
-    <span class="scroll-leftvideo scroll-chevronvideo"><</span>
- <span class="scroll-rightvideo scroll-chevronvideo">></span> 
-<section class="carouselvideo">
-    <div class="carousel__container">
-        <div class="carousel-item">
+        <span class="scroll-leftvideo scroll-chevronvideo"><</span>
+        <span class="scroll-rightvideo scroll-chevronvideo">></span> 
+        <section class="carousel">
+        <div class="carousel__container">
             <div class="carousel-item">
-                <h2>Volver el gol de Di maria</p>
-                <video
-                    src="./video/dimaria.mp4"
-                    controls class="itemvideo"></video>
-
+                <h2>Futbol - Final del Mundial 2022</h2>
+                <video src="./videos/FINAL DEL MUNDIAL 2023.mp4" controls class="itemvideo"></video>
             </div>
+            <div class="carousel-item">
+                <h2>Tenis - El mejor break point de Del Potro</h2>
+                <video src="./videos/finaldelpotro.mp4" controls class="itemvideo"></video>
+            </div>
+            <div class="carousel-item">
+                <h2>Rugby - Argentina Japon</h2>
+                <video src="./videos/lospumas.mp4" controls class="itemvideo"></video>
+        
+            </div>
+            <div class="carousel-item">
+                <h2>Polo - Abierto de Hurlingham</h2>
+                <video src="./videos/partidopolo.mp4" controls class="itemvideo"></video>
+        
+        
+            </div>
+        
+        
+        
         </div>
-
-        <div class="carousel-item">
-            <h2>Los mejores break point de Del Potro</h2>
-            <video src="./videos/finaldelpotro.mp4" controls class="itemvideo"></video>    
+        
+        
         </div>
-        <div class="carousel-item">
-            <h2> Argentina Japon</h2>
-            <video src="./videos/lospumas.mp4" controls class="itemvideo"></video>
-
-        </div>
-        <div class="carousel-item">
-            <h2>Hurlingham Polo Abierto</h2>
-               <video src="./videos/lospumas.mp4" controls class="itemvideo"></video>
-                
-
-        </div>
-
-
-       
-    </div>
-
-
-    </div>
+        </section>
 </section>
-</section>
-
+        
+<section>
+    <span class="carousel1-titulo">
+        <h3> Los mejores videos en un click</h3>
+    </span>
 
 <section class="container-carrousel">
 
     <span class="scroll-leftIframe scroll-chevronIframe"><</span>
  <span class="scroll-rightIframe scroll-chevronIframe">></span> 
-<section class="carouselIframe">
+<section class="carousel">
     <div class="carousel__container">
         <div class="carousel-item">
-            <div class="carousel-item">
-                
-                    <p>TODOS LOS GOLES DE ARGENTINA EN EL MUNDIAL 2022</p>
+            <h2>Eliminatorias 2026</h2> -->
+            <iframe class="itemvideo" src="https://www.youtube.com/embed/tUc_cP9LN24" title="ELIMINATORIAS SUDAMERICANAS 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen></iframe>
 
-
-
-<iframe class="iframeVideo" src="https://www.youtube.com/embed/dY2GNZkv_F4" title="TODOS LOS GOLES DE ARGENTINA EN EL MUNDIAL 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-            </div>
+            <!-- <iframe class="iframeVideo" src="https://www.youtube.com/embed/dY2GNZkv_F4" title="TODOS LOS GOLES DE ARGENTINA EN EL MUNDIAL 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         </div>
         <div class="carousel-item">
-            
-            <h2>Los mejores break point de Del Potro</h2>
-            <video src="./videos/finaldelpotro.mp4" controls
-                class="itemvideo"></video>
+            <h2>Argentina Campeon COPA DAVIS 2016</h2>
+            <iframe class="itemvideo" src="https://www.youtube.com/embed/ChIRJ3c9yFc"
+                title="Argentina Campeon COPA DAVIS 2016" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
 
-            
-        </div>
-        <div class="carousel-item">
-            <h2> Argentina Japon</h2>
-            <video src="./videos/lospumas.mp4" controls class="itemvideo"></video>
 
         </div>
         <div class="carousel-item">
-            <h2>Hurlingham Polo Abierto</h2>
-                 <iframe class="iframeVideo" src="https://www.youtube.com/embed/dY2GNZkv_F4" title="TODOS LOS GOLES DE ARGENTINA EN EL MUNDIAL 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-                
+            <h2>¡OTRA HISTÓRICA VICTORIA DE LOS PUMAS ANTE LOS ALL BLACKS! | Nueva Zelanda 18-25 Argentina | RESUMEN
+            </h2>
+            <iframe class="itemvideo" src="https://www.youtube.com/embed/RE85OEm8C1M"
+                title="¡OTRA HISTÓRICA VICTORIA DE LOS PUMAS ANTE LOS ALL BLACKS! | Nueva Zelanda 18-25 Argentina | RESUMEN"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+        </div>
+        <div class="carousel-item">
+            <h2>56th Jockey Club Open Semifinal 2021 La Dolfina vs. Ellerstina Pilot</h2>
+            <iframe class="itemvideo" src="https://www.youtube.com/embed/zv6m6bhdbAU"
+                title="56th Jockey Club Open Semifinal 2021 La Dolfina vs. Ellerstina Pilot" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
 
         </div>
 
 
-       
+
     </div>
 
 
     </div>
 </section>
 </section>
+</section>
+
+<section>
+    <div class="carousel1-titulo">
+        <h1> Accede a los videos de los partidos que hicieron histori  </h1>
+</div>
+</section>
+
 <!-- 
 <p>Argentina advance after Japan epic! | Japan v Argentina | Rugby World Cup 2023 Highlights</p>
 <iframe  class="iframeVideo"  src="https://www.youtube.com/embed/cMY0rMuGhDE" title="Argentina advance after Japan epic! | Japan v Argentina | Rugby World Cup 2023 Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>Argentina Rugby&#39;s Greatest Moments of All Time!</p>
 <iframe  class="iframeVideo"  src="https://www.youtube.com/embed/SyvbT0sMxvs" title="Argentina Rugby&#39;s Greatest Moments of All Time!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>¡OTRA HISTÓRICA VICTORIA DE LOS PUMAS ANTE LOS ALL BLACKS! | Nueva Zelanda 18-25 Argentina | RESUMEN</p>
-<iframe  class="iframeVideo"  src="https://www.youtube.com/embed/RE85OEm8C1M" title="¡OTRA HISTÓRICA VICTORIA DE LOS PUMAS ANTE LOS ALL BLACKS! | Nueva Zelanda 18-25 Argentina | RESUMEN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 <p>ARGENTINA CAMPEÓN DE LA COPA DAVIS !</p>
@@ -229,35 +249,8 @@ ACA EMPIEZAN LOS VIDEOS -->
 <iframe  class="iframeVideo"  src="https://www.youtube.com/embed/8UR6hrmueys" title="#CopaDavis: Match Point Del Potro vs Cilic (Tyc Sports)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>RESUMEN: Andy Murray (GBR) v Juan Martín del Potro (ARG)</p>
 <iframe  class="iframeVideo"  src="https://www.youtube.com/embed/1U8x_P9cbJ8" title="RESUMEN: Andy Murray (GBR) v Juan Martín del Potro (ARG)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>Argentina Campeon COPA DAVIS 2016</p>
-<iframe  class="iframeVideo" src="https://www.youtube.com/embed/ChIRJ3c9yFc" title="Argentina Campeon COPA DAVIS 2016" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-
-
-<p>Argentina Polo Open (Palermo) 2019 Ellerstina vs. La Dolfina FINAL</p>
-<iframe class="iframeVideo" src="https://www.youtube.com/embed/GpmkjF6MVGs" title="Argentina Polo Open (Palermo) 2019 Ellerstina vs. La Dolfina FINAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>56th Jockey Club Open Semifinal 2021 La Dolfina vs. Ellerstina Pilot</p>
-<iframe class="iframeVideo" src="https://www.youtube.com/embed/zv6m6bhdbAU" title="56th Jockey Club Open Semifinal 2021 La Dolfina vs. Ellerstina Pilot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>56th Jockey Club Open Final 2021 - La Hache vs. La Ensenada</p>
-<iframe class="iframeVideo" src="https://www.youtube.com/embed/u150nadylFc" title="56th Jockey Club Open Final 2021 - La Hache vs. La Ensenada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
- -->
-
-
-
-
-<!-- 
-<p>TODOS LOS GOLES DE LA FECHA 2 ELIMINATORIAS SUDAMERICANAS 2026</p>
-<iframe class="iframeVideo"  src="https://www.youtube.com/embed/tUc_cP9LN24" title="TODOS LOS GOLES DE LA FECHA 2 ELIMINATORIAS SUDAMERICANAS 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>TODOS LOS GOLES DE ARGENTINA EN EL MUNDIAL 2022</p>
-<iframe class="iframeVideo" src="https://www.youtube.com/embed/dY2GNZkv_F4" title="TODOS LOS GOLES DE ARGENTINA EN EL MUNDIAL 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>TODOS LOS GOLES DE LA FECHA 2 ELIMINATORIAS SUDAMERICANAS 2026</p>
-<iframe class="iframeVideo" src="https://www.youtube.com/embed/tUc_cP9LN24" title="TODOS LOS GOLES DE LA FECHA 2 ELIMINATORIAS SUDAMERICANAS 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>EL DIA QUE MAXI RODRIGUEZ HIZO LO IMPOSIBLE / ARGENTINA 2 MEXICO 1</p>
-<iframe class="iframeVideo" src="https://www.youtube.com/embed/s0rP8vRnwiQ" title="EL DIA QUE MAXI RODRIGUEZ HIZO LO IMPOSIBLE / ARGENTINA 2 MEXICO 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</section>
- -->
 
 
 
@@ -292,7 +285,7 @@ ACA EMPIEZAN LOS VIDEOS -->
 
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script> -->
-
+<!-- 
 <script>
     document.getElementById("boton-hamburguesa").addEventListener("click", function () {
         var menu = document.getElementById("menu-hamburguesa");
@@ -303,6 +296,7 @@ ACA EMPIEZAN LOS VIDEOS -->
         }
     });
     document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+       console.log  ;
         var menu = document.getElementById("menu-hamburguesa");
         var icono = document.querySelector("#boton-hamburguesa span");
 
@@ -310,6 +304,6 @@ ACA EMPIEZAN LOS VIDEOS -->
         icono.classList.toggle("rotar");
     });
 
-</script>
+</script> -->
 
 </html>

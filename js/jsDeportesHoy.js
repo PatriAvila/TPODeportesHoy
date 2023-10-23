@@ -1,4 +1,17 @@
 
+// Para mostrar y ocultar el menú hamburguesa al hacer clic en el botón,
+
+    document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+        var menu = document.getElementById("menu-hamburguesa");
+        
+        if (menu.style.display != "block") {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    });
+
+
 const scrollElement = document.querySelector(".carousel");
 const scrollLeft = document.querySelector(".scroll-left");
 const scrollRight = document.querySelector(".scroll-right");
@@ -69,11 +82,11 @@ const linkList = [
     text: "Facebook"
   },
   {
-    url: "https://github.com/glrodasz",
+    url: "",
     text: "Instagram"
   },
   {
-    url: "https://github.com/glrodasz",
+    url: "",
     text: "Whatsapp"
   },
 ];
