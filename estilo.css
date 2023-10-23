@@ -299,6 +299,7 @@ main {
   padding: 5px;
   width: 90%;
   height: auto;
+  text-align: center;
 }
 
 .container-carrousel {
@@ -518,6 +519,25 @@ main {
   z-index: 2;
 }
 
+
+.scroll-leftIframe {
+  display: block;
+  position: absolute;
+  top: calc(var(--carousel-item-height) - 90px);
+  left: 0;
+  z-index: 1;
+}
+
+.scroll-rightIframe {
+  display: block;
+  position: absolute;
+  top: calc(var(--carousel-item-height) - 90px);
+  right: 0;
+  z-index: 2;
+}
+
+
+
 .scroll-chevron {
   font-size: 7rem;
   cursor: pointer;
@@ -526,10 +546,17 @@ main {
 }
 
 
-.scroll-chevronvide {
-  font-size: 4.5rem;
+.scroll-chevronvideo {
+  font-size: 7rem;
   cursor: pointer;
-  color: #fafafa;
+  color: var(--light-font-solid);
+}
+
+
+.scroll-chevronIframe {
+  font-size: 7rem;
+  cursor: pointer;
+  color: var(--light-font-solid);
 }
 
 /* Footer */
