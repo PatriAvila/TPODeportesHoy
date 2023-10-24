@@ -31,7 +31,7 @@
      --font-large: 2.4em;
      --font-medium: 1.8em;
      --font-small: 1.6em;
-     --font-xsmall: 1.4em;
+     --font-xsmall: 1em;
      /*spacing       */
       --spacing-128:12.8rem;
       --spacing-100:9rem;
@@ -61,7 +61,8 @@ a {
   text-decoration: none;
   color: var(--dark-font-solid);
   font-family: var(--base-font);
-  font-size: var(--font-small);
+  font-size: var(--font-xsmall);
+  
   
 }
 
@@ -242,7 +243,7 @@ main {
 
 .hero::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.777);
+  background-color: rgba(238, 49, 49, 0.777);
   width: 100%;
   height: auto;
   position: sticky;
@@ -262,18 +263,21 @@ main {
   z-index: 2;
   position: relative;
   height: auto;
-  padding-left: 40px;
+  padding-left: 30px;
 
 }
 
 .hero__span {
   background-color: var(--primary-300);
-  background-color:  rgba(89, 3, 3, 0.386);;
+  background-color:  rgba(250, 34, 5, 0.856);;
+  background: linear-gradient(to top,
+  rgba(185, 5, 5, 0.679) 0%,
+  rgba(0, 0, 0, 0) 100%);
   padding: 15px 15px 15px 20px ;
   
   border-radius: 5px;
   height: 160px;
-  backdrop-filter: blur(8px) brightness(.9);
+  backdrop-filter: blur(11px) brightness(.9);
   height: auto;
 
 }
@@ -329,7 +333,26 @@ main {
   scroll-behavior: smooth;
 }
 
+.carouselvideo {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 5px 20px 0px 20px;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  scroll-behavior: smooth;
+}
 
+
+.carouselIframe {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 5px 20px 0px 20px;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  scroll-behavior: smooth;
+}
 
 .carousel__container {
  
@@ -637,7 +660,7 @@ main {
 /*footer con js*/
 .footer {
   background-color: var(--dark-bG-solid);
-  padding: var(--spacing-68);
+  padding: var(--spacing-8) var(--spacing-36); 
   font-size: var(--font-medium);
 }
 
@@ -651,7 +674,9 @@ main {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  float: left;
+  
   background: #17171a;
   padding: 1em;
   margin-top: 2em;

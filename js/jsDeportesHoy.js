@@ -28,7 +28,7 @@ function moveScroll(displacement) {
 
 
 function moveScrollvideo(displacement) {
-  let currentPosition = scrollElementvideo.scrollLeft;
+  let currentPosition = scrollElementvideo.scrollLeftvideo;
   scrollElementvideo.scrollTo(currentPosition + displacement, 0);
 }
 
@@ -64,84 +64,70 @@ scrollRightvideo.addEventListener("click", () => {
 
 
 
+
+
+
+
 function ready(cb) {
   document.addEventListener("DOMContentLoaded", cb);
 }
 
-const linkList = [
-  {
-    url: "index.html",
-    text: "Home"
-  },
-  {
-    url: "https://www.twitter.com",
-    text: "Twitter"
-  },
-  {
-    url: "https://www.linkedin.com",
-    text: "Facebook"
-  },
-  {
-    url: "",
-    text: "Instagram"
-  },
-  {
-    url: "",
-    text: "Whatsapp"
-  },
-];
 
-function createLink({ text, url }) {
-  // Creamos un elemento tipo link
-  const linkElement = document.createElement("a");
-  // Creamos un nodo de texto
-  const textNode = document.createTextNode(text);
+ function renderFooter() {
 
-  // Agregamos el texto al link
-  linkElement.appendChild(textNode);
-  // Especificamos la url del link
-  linkElement.href = url;
-  // Especificamos el target
-  linkElement.target = "_blank";
 
-  return linkElement;
+  var a = document.createElement('a'); 
+  var linkText = document.createTextNode("my title text"); 
+  a.appendChild(linkText); 
+  a.title = "Instagram"; 
+  a.href = "http://example.com"; 
+ 
+
+  
+
+
+
+
+
+const footer = document.querySelector("footer");
+//   // Agregamos nuestra lista no-ordenada al footer
+var img1 = document.createElement('img'); 
+var img2 = document.createElement('img'); 
+
+img1.classList.add('mystyle'); // adding class
+img2.classList.add('mystyle'); // adding class
+ 
+// Establece la ubicación de la imagen 
+img1.src = "./icons/whatsapp_2504957 (1).png";  
+img2.src = "./icons/instagram_2111463.png"
+
+var a = document.createElement('a'); 
+var linkText = document.createTextNode("Instagram"); 
+a.appendChild(linkText); 
+a.title = "Instagram"; 
+a.href = "http://example.com"; 
+
+const src = "./icons/whatsapp_2504957 (1).png";
+let imgTag = document.createElement('img');
+imgTag.src = src;
+
+footer.appendChild(a);
+
+
+// Agrega la imagen al documento 
+footer.appendChild(img1); 
+footer.appendChild(img2)
+
 }
 
-function createListItem(linkElement) {
-  // Creamos un elemento tipo item de lista
-  const listItemElement = document.createElement("li");
+// agregar imagenes
+var img = document.createElement('img'); 
+img.classList.add('mystyle'); // adding class
+ 
+// Establece la ubicación de la imagen 
+img.src = "./icons/whatsapp_2504957 (1).png";  
 
-  // Agregamos nuestro link a nuestro item de lista
-  listItemElement.appendChild(linkElement);
 
-  return listItemElement;
-}
-
-function createList() {
-  // Creamos una elemento tipo lista no-ordenada
-  const unorderedList = document.createElement("ul");
-
-  // Iteramos nuestra lista de links
-  linkList.forEach((link) => {
-    // Creamos un elemento tipo link
-    const linkElement = createLink(link);
-    // Creamos un elemento tipo item de lista
-    const listItemElement = createListItem(linkElement);
-    // Agregamos nuestro item de lista a la lista no-ordenada
-    unorderedList.appendChild(listItemElement);
-  });
-
-  return unorderedList;
-}
-
-function renderFooter() {
-  // Creamos la lista no-ordenada
-  const list = createList();
-  // Seleccionamos el footer
-  const footer = document.querySelector("footer");
-  // Agregamos nuestra lista no-ordenada al footer
-  footer.appendChild(list);
-}
 
 // Cuando nuestro contenido este listo pintamos el footer
 ready(renderFooter);
