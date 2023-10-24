@@ -1,0 +1,167 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+h1{
+    color: #295BF2;
+    text-align: center;
+}
+
+section{
+    line-height: 22px;
+    padding: 15px;  
+}
+
+/*map*/
+#map{
+    align-items: center;
+    justify-content: center;
+    outline: 4px solid;
+    margin: auto;
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+}
+
+#map iframe{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*text column*/
+.container-1{
+    display: flex;
+    margin: auto;
+    border-radius: 15px;
+    width: 80%;   
+}
+
+.container-2{
+    display: flex;
+    margin: auto;
+    border-radius: 15px;
+    width: 80%;  
+}
+
+.columna-1, .columna-2{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0 10px;
+    text-align: justify;
+}
+
+.columna-1, .columna-2 p{
+    display: flex;
+}
+
+
+h2{
+    color: #295BF2;
+    text-align: center;
+    line-height: 30px;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 25vh;
+}
+
+/*image*/
+.image{
+    position: relative;
+    width: 200px;
+    height: 330px;
+    margin: 20px;
+}
+.image .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+.image .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 10px 15px #0D0D0D;
+    border-radius: 15px;
+}
+.image .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 10px;
+    border-color: #57F29A;
+    object-fit: cover;
+}
+
+.image .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #295BF2;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 10px 15px #2955D9;
+}
+
+.image:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.image:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    .text-box h2{
+        font-size: 20px;
+    }
+    .container-1, .container-2{
+        width: 80%;
+    }
+    #map{
+        width: 80%;
+    }
+   
+
+
+
+}
+
+
+/* Color Theme Swatches in Hex */
+.Smart-Home-App-1-hex { color: #295BF2; }
+.Smart-Home-App-2-hex { color: #2955D9; }
+.Smart-Home-App-3-hex { color: #57F29A; }
+.Smart-Home-App-4-hex { color: #F2BA52; }
+.Smart-Home-App-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Smart-Home-App-1-rgba { color: rgba(41, 91, 242, 1); }
+.Smart-Home-App-2-rgba { color: rgba(41, 85, 216, 1); }
+.Smart-Home-App-3-rgba { color: rgba(87, 242, 154, 1); }
+.Smart-Home-App-4-rgba { color: rgba(242, 186, 82, 1); }
+.Smart-Home-App-5-rgba { color: rgba(12, 12, 12, 1); }
+
+

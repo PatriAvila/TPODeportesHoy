@@ -48,25 +48,6 @@ scrollRightvideo.addEventListener("click", () => {
   moveScrollvideo (400);
 });
 
-// onload = () => {
-//   console.log(scrollElement.style);
-//   if (scrollElement.style.display) {
-//     scrollLeft.style.display = "none";
-//   }
-// };
-
-// onload = () => {
-//   console.log(scrollElementvideo.style);
-//   if (scrollElementvideo.style.display) {
-//     scrollLeftvideo.style.display = "none";
-//   }
-// };
-
-
-
-
-
-
 
 function ready(cb) {
   document.addEventListener("DOMContentLoaded", cb);
@@ -74,59 +55,66 @@ function ready(cb) {
 
 
  function renderFooter() {
-
-
-  var a = document.createElement('a'); 
-  var linkText = document.createTextNode("my title text"); 
-  a.appendChild(linkText); 
-  a.title = "Instagram"; 
-  a.href = "http://example.com"; 
- 
-
-  
-
-
-
-
-
 const footer = document.querySelector("footer");
-//   // Agregamos nuestra lista no-ordenada al footer
-var img1 = document.createElement('img'); 
-var img2 = document.createElement('img'); 
 
-img1.classList.add('mystyle'); // adding class
-img2.classList.add('mystyle'); // adding class
+
+var imginstagram = document.createElement('img'); 
+var imgfacebook = document.createElement('img'); 
+var imgwhatsapp = document.createElement('img'); 
+var imgcorreo = document.createElement('img'); 
+
+imginstagram.classList.add('mystyle'); // adding class
+imgfacebook.classList.add('mystyle'); // adding class
+imgwhatsapp.classList.add('mystyle'); // adding class
+imgcorreo.classList.add('mystyle'); // adding class
  
 // Establece la ubicación de la imagen 
-img1.src = "./icons/whatsapp_2504957 (1).png";  
-img2.src = "./icons/instagram_2111463.png"
-
-var a = document.createElement('a'); 
-var linkText = document.createTextNode("Instagram"); 
-a.appendChild(linkText); 
-a.title = "Instagram"; 
-a.href = "http://example.com"; 
-
-const src = "./icons/whatsapp_2504957 (1).png";
-let imgTag = document.createElement('img');
-imgTag.src = src;
-
-footer.appendChild(a);
+imginstagram.src = "./icons/instagram.png";  
+imgfacebook.src = "./icons/facebook.png"
+imgwhatsapp.src = "./icons/whatsapp.png";  
+imgcorreo.src = "./icons/correo.png"
 
 
+//crea link a Instagram
+var aInstagram = document.createElement('a'); 
+aInstagram.title = "Instagram"; 
+aInstagram.href = "http://example.com"; 
+footer.appendChild(aInstagram);
 // Agrega la imagen al documento 
-footer.appendChild(img1); 
-footer.appendChild(img2)
+aInstagram.appendChild(imginstagram); 
+
+//crea link a Facebook
+var aFacebook = document.createElement('a'); 
+aFacebook.title = "Facebook"; 
+aFacebook.href = "http://example.com"; 
+footer.appendChild(aFacebook);
+// Agrega la imagen al documento 
+aFacebook.appendChild(imgfacebook);
+
+
+//crea link a Whatsapp
+
+var aWhatsapp = document.createElement('a'); 
+aWhatsapp.title = "Whatsapp"; 
+aWhatsapp.href = "http://example.com"; 
+footer.appendChild(aWhatsapp);
+// Agrega la imagen al documento 
+aWhatsapp.appendChild(imgwhatsapp); 
+
+//crea link a Correo
+var aCorreo = document.createElement('a'); 
+aCorreo.title = "Correo"; 
+aCorreo.href = "http://example.com"; 
+footer.appendChild(aCorreo);
+aCorreo.appendChild(imgcorreo);
+
+
+
+var pfooter = document.createElement("p");
+pfooter.innerText = "All rights reserved 2023 ©";
+footer.appendChild(pfooter);
 
 }
-
-// agregar imagenes
-var img = document.createElement('img'); 
-img.classList.add('mystyle'); // adding class
- 
-// Establece la ubicación de la imagen 
-img.src = "./icons/whatsapp_2504957 (1).png";  
-
 
 
 // Cuando nuestro contenido este listo pintamos el footer

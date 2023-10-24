@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rugby Grupo</title>
+    <link rel="icon" href="./favicon/favicon.ico">
+    
+    <link rel="stylesheet" href="./css/stylerugbygrupo.css">
+    <script defer src="./js/jsDeportesHoy.js"></script>
+    
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>
+                <p> DeportesHoy</p>
+            </h1>
+                <button id="boton-hamburguesa">
+                    <span>&#9776;</span> Menú
+                </button>
+                <nav id="menu-hamburguesa">
+                    <ul class="navbar__menu">
+                        <li class="navbar__item"> <a class="navbar__link" href="./index.html">Inicio</a></li>
+                        <li class="navbar__item"> <a class="navbar__link" href="#Fútbol">Futbol</a></li>
+                        <li class="navbar__item"> <a class="navbar__link" href="#Tenis">Tennis</a></li>
+                        <li class="navbar__item"> <a class="navbar__link" href="./rugbygrupo.html">Rugby</a></li>
+                        <li class="navbar__item"> <a class="navbar__link" href="#Polo">Polo</a></li>
+                        <li class="navbar__item"> <a class="navbar__link" href="#Basket">Basket</a></li>
+                    </ul>
+                </nav>
+        </nav>
+  
+    </header>
+
+
+    <section id="deportes">
+        <div>
+            <img src="./img/images/casiA.webp" alt="">
+            
+            <h4>CASI</h4>
+            <p>El Club Atlético de San Isidro es mayormente conocido por su equipo de rugby. Es miembro de la Unión de Rugby de Buenos Aires y participa desde hace años de la URBA.</p>
+            <a href="./pages/casi.html" class="ver-mas">Ver más</a>  
+        </div>
+        <div>
+            <img src="./img/images/alumniA.webp" alt="">
+            <h4>ALUMNI</h4>
+            <p>Asociación Alumni es un club de rugby, con sede en Tortuguitas, Provincia de Buenos Aires. Fue fundado el 13/12/1951. Actualmente compite en el torneo de la URBA.</p>
+            <a href="" class="ver-mas">Ver más</a>
+        </div>
+        <div>
+            <img src="./img/images/sicA.webp" alt="">
+            <h4>SIC</h4>
+            <p>El San Isidro Club es un club de rugby y hockey. Ubicada en Boulogne Sur Mer, Provincia de Buenos Aires. Fue fundada en 1935. Miembro de la Unión de Rugby.</p>
+            <a href="" class="ver-mas">Ver más</a>
+        </div>
+        <div>
+            <img src="./img/images/newmanA.webp" alt="">
+            <h4>NEWMAN</h4>
+            <p>El Club Newman es un club de rugby, hochey, tenis y golf de origen católico de Argentina. Fue fundada el 15/12/1975 en Benavidez. Compite dentro de la Unión de Rugby.</p>
+            <a href="" class="ver-mas">Ver más</a>
+        </div>
+        <div>
+            <img src=". /img/images/laplataA.webp" alt="">
+            <h4>LA PLATA</h4>
+            <p>Fundado el 24/03/1934. Jugó sus primeros años en la segunda división argentina. En 1953 alcanzó la primera categoría. Ubicada en la ciudad de La Plata.</p>
+            <a href="" class="ver-mas">Ver más</a>
+        </div>
+   </section>
+
+   <h3 class="heading">Noticias sobre Los Pumas</h3>
+        <div class="container">
+            <div class="video">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/OMkNKsVXguQ?si=ufSwAlu5d9uH0rc1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h2>Resúmen del partido de Los Pumas frente a Japón en el mundial de Francia 2023</h2>
+            </div>
+            
+
+        </div>
+
+        <script>
+            document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+                var menu = document.getElementById("menu-hamburguesa");
+                if (menu.style.display != "block") {
+                    menu.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                }
+            });
+            document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+                var menu = document.getElementById("menu-hamburguesa");
+                var icono = document.querySelector("#boton-hamburguesa span");
+        
+                menu.classList.toggle("mostrando");
+                icono.classList.toggle("rotar");
+            });
+        </script>
+
+
+
+<footer class="footer">
+    <style>
+        .mystyle {
+        width: 60px;
+        height: 60px;
+        }
+     </style>
+
+</footer>
+
+ 
+</body>
+</html>
