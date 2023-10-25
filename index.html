@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="./css/footer.css"> 
     <script defer src="js/jsDeportesHoy.js"></script>
     <title>DeportesHoy  </title>
 </head>
@@ -212,14 +215,63 @@ ACA EMPIEZAN LOS VIDEOS -->
 
         <!--INICIO footer con navegacion  --->
         <footer class="footer">
-            <style>
-                .mystyle {
-                width: 60px;
-                height: 60px;
-                }
+            
              </style>
         
         </footer>
+
+
+     <!-- Para mostrar y ocultar el menú hamburguesa al hacer clic en el botón, -->
+     <script>
+
+        document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+            var menu = document.getElementById("menu-hamburguesa");
+            
+            if (menu.style.display != "block") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        });
+    
+    
+    const scrollElement = document.querySelector(".carousel");
+    const scrollLeft = document.querySelector(".scroll-left");
+    const scrollRight = document.querySelector(".scroll-right");
+    
+    const scrollElementvideo = document.querySelector(".carouselvideo");
+    const scrollLeftvideo = document.querySelector(".scroll-leftvideo");
+    const scrollRightvideo = document.querySelector(".scroll-rightvideo");
+    
+    function moveScroll(displacement) {
+      let currentPosition = scrollElement.scrollLeft;
+      scrollElement.scrollTo(currentPosition + displacement, 0);
+    }
+    
+    
+    
+    function moveScrollvideo(displacement) {
+      let currentPosition = scrollElementvideo.scrollLeftvideo;
+      scrollElementvideo.scrollTo(currentPosition + displacement, 0);
+    }
+    
+    scrollLeft.addEventListener("click", () => {
+      moveScroll(-400);
+    });
+    
+    scrollRight.addEventListener("click", () => {
+      moveScroll(400);
+    });
+    
+    scrollLeftvideo.addEventListener("click", () => {
+      moveScrollvideo(-400);
+    });
+    
+    scrollRightvideo.addEventListener("click", () => {
+      moveScrollvideo (400);
+    });
+    
+    </script>
 
 </body>
 
