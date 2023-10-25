@@ -1,0 +1,328 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #2a9d8f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    margin: 0; 
+    padding: 0;
+}
+.iframes-container {
+  display:flex; /* Establece el contenedor como un flex container */
+  gap: 3em; /* Agrega un espaciado entre los iframes */
+  justify-content: space-between;
+}
+
+.iframes-container figure {
+  width: 30em; /* Aproximadamente un tercio del ancho con un espacio entre ellos */
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #225c55;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.tenistas {
+  width: 40em;
+  height: 20em;
+}
+
+figcaption {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    margin: 0; /* Asegura que no haya margen */
+    padding: 0; /* Asegura que no haya relleno */
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0; 
+  }
+  .flex-items:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0; 
+  }
+  .flex-items:nth-child(5) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0; 
+  }
+  .flex-items:nth-child(6) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0; 
+    padding: 20px;
+    width: 65em;
+  }
+  .flex-items:nth-child(7) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0; 
+    padding: 20px;
+    width: 65em;
+  }
+  .flex-items:nth-child(8) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0; 
+    padding: 20px;
+    width: 65em;
+  }
+  .flex-items a{
+    text-decoration: none;
+    color: #1a56afc1;
+  }
+  .flex-items a:hover{
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  /*----CARRUSEL----*/
+.ContainerCenter{
+  height: 80vh;
+  background-color: #2a9d8f;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+	font-family: Arial;
+  color:White;
+  font-size:min(30px, max(3.75vw, 25px));
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+label{cursor: pointer;}
+
+/* Contenedor para centrar */
+.ContainerCenter{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* Input */
+input{display: none}
+
+/*----Contenedor ----*/
+.contenedor {
+  display: flex; /* Flexbox para controlar la disposición de los elementos */
+  justify-content: space-between; /* Coloca los elementos en los extremos opuestos */
+  align-items: flex-start; /* Alinea los elementos en la parte superior del contenedor */
+}
+.texto {
+  width: 50%; /* Ancho del div de texto (ajusta según tus necesidades) */
+}
+img {
+  width: 50%; /* Ancho de la imagen (ajusta según tus necesidades) */
+}
+/*----FOOTER----*/
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 25px;
+  height: 25px;
+}
+
+p {
+  margin: 10px 0;
+}
+/*----ANIMACIONES----*/
+@-webkit-keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+            transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+            transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.Carrusels {
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.destacada {
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+ /*-----RESPONSIVE------*/
+@media screen and (max-width: 795px) {
+  /*----BODY GENERAL----*/
+  .flex-items{
+    width: 100%;    
+  }
+  .flex-items:nth-child(2){
+    display: block;
+    width: 100%;
+    max-width: max-content;
+  }
+  /*----SECCION NOTICIAS----*/
+   #titulares{
+    font-size: 2vh;
+   } 
+   
+  iframe{
+    height: 12em;
+    width: 26em;
+   }
+
+    figure ,figcaption{
+    width: 100%;
+    font-size:3vw;
+   }
+  .iframes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: column;
+    max-width: 88%;
+  }
+  /*-----SECCION TENISTAS-----*/
+  .contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 2vh;
+  }
+  .texto {
+      text-align: center;
+      height: 13em;
+  }
+  .tenistas{
+    width: 30em;
+    padding-top: 5em;
+  }
+}
