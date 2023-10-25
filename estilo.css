@@ -283,7 +283,7 @@ main {
 }
 
 .hero__title {
-  font-family: var(--alternative-font);
+  font-family: var(--base-font);
   font-size: var(--font-xlarge);
   color: var(--light-font-solid);
   
@@ -291,7 +291,7 @@ main {
 
 
 .hero__text {
-  font-family: var(--alternative-font);
+  font-family: var(--base-font);
   font-size: var(--font-large);
   color: var(--light-font-solid);
 }
