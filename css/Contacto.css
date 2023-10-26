@@ -34,6 +34,9 @@
         font-family: var(--base-font);
         font-size: var(--font-xsmall);
       }
+      html{
+        font-size: 75%;
+      }
 ul {
     list-style: none;
   }
@@ -67,7 +70,8 @@ ul {
   align-items: start;
   position: relative;
   height: auto;
-  padding-left: 120px;
+  padding-left: 50px;
+  min-width: 300px;
 }
 input ,textarea {
     width: 80%;
@@ -75,30 +79,56 @@ input ,textarea {
     border-radius: 15px;
     border: solid 4px;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: left ;
+    width: 90%;
+    min-width: 300px;
+    align-items: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-bG-solid);
+    align-items: center;
+    padding-top: 100px;
 
+}    
+#fs-frm-inputs{
+    width: 100%;
+    border: none;
+}
+main{
+    display: flex;
+    background-color: var(--dark-solid);
+    flex-direction: column;
+    text-align: left ;
+    width: 60%;
+    min-width: 300px;
+    align-items: center;
+}
 label{
     font-size: var(--font-small);
 }
 #fs-frm{
     background-color: var(--dark-solid);
+    
 }
+
 #idEnviar{
     width: 20%;
+    min-width: 180px;
     background-color: var(--light-font-solid);
 } 
 .Enviar-Container
 {
     display: flex;
     flex-direction: column;
-  flex-wrap: wrap;
+  
     align-items: center;
     justify-content:center;
     
    }
-body{
-    background-color: var(--dark-bG-solid);
-
-}
-
 
 
