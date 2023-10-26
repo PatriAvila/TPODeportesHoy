@@ -161,18 +161,20 @@ body {
 }
 .iframes-container {
   display:flex; /* Establece el contenedor como un flex container */
-  gap: 3em; /* Agrega un espaciado entre los iframes */
+  gap: 1.5em; /* Agrega un espaciado entre los iframes */
   justify-content: space-between;
 }
 
 .iframes-container figure {
-  width: 30em; /* Aproximadamente un tercio del ancho con un espacio entre ellos */
+  width: 25em; /* Aproximadamente un tercio del ancho con un espacio entre ellos */
   box-sizing: border-box;
   text-align: center;
-  background-color: #225c55;
+  background-color:var(--dark-bG-solid);
   padding: 20px;
   border-radius: 20px;
   color: white;
+  
+
 }
 
 .tenistas {
@@ -278,7 +280,12 @@ figcaption {
     text-decoration: underline;
     color: #0056b3;
   }
-  
+  .tenistas-ranking{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 30px;
+  }
   /*----CARRUSEL----*/
 .ContainerCenter{
   height: 80vh;
@@ -311,9 +318,11 @@ input{display: none}
   display: flex; /* Flexbox para controlar la disposición de los elementos */
   justify-content: space-between; /* Coloca los elementos en los extremos opuestos */
   align-items: flex-start; /* Alinea los elementos en la parte superior del contenedor */
+padding: 15px 0px 30px;
 }
 .texto {
-  width: 50%; /* Ancho del div de texto (ajusta según tus necesidades) */
+  width: 50%;
+   /* Ancho del div de texto (ajusta según tus necesidades) */
 }
 img {
   width: 50%; /* Ancho de la imagen (ajusta según tus necesidades) */
@@ -451,12 +460,13 @@ p {
    
   iframe{
     height: 12em;
-    width: 26em;
+    width: 20em;
    }
 
     figure ,figcaption{
     width: 100%;
     font-size:3vw;
+    
    }
   .iframes-container {
     display: flex;
