@@ -46,6 +46,11 @@ ul {
     font-family: var(--base-font);
     font-size: var(--font-xsmall); 
   }
+  img{
+    width: 30%;
+    
+
+  }
 /* 
 #fs-frm{
     display:grid;
@@ -107,6 +112,7 @@ main{
     width: 60%;
     min-width: 300px;
     align-items: center;
+    border-radius: 15px;
 }
 label{
     font-size: var(--font-small);
