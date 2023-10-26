@@ -1,0 +1,32 @@
+<!-- <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspre.io/f/{form_id}" method="post"> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Contacto.css">
+    <title>Document</title>
+</head>
+<body>
+    
+        
+    <form id="fs-frm" name="Formulario de Contacto" accept-charset="utf-8"  method="post">
+    <fieldset id="fs-frm-inputs">
+    <div class="camposFormulario">
+      <label for="NombreCompleto">Nombre</label>
+      <input type="text" name="Nombre Completo" id="idNombreCompleto" placeholder="Ingrese Nombre y Apellido" required="">
+      <label for="email">Correo Electronico</label>
+      <input type="email" name="Para" id="email-para-id" placeholder="Ingrese su email" required="">
+      <label for="Mensaje">Escriba su Mensaje</label>
+      <textarea rows="5" name="Mensaje" id="idMensaje" placeholder="Ingrese su mensaje." required=""></textarea>
+      <input type="hidden" name="Asunto" id="idAsunto" value="Contacto de Envio">
+    </div>
+    </fieldset>
+    <div class="Enviar-Container">
+    <input type="submit" id="idEnviar" value="Enviar">
+</div>  
+</form>
+  
+
+</body>
+</html>

@@ -55,6 +55,8 @@ footer.appendChild(aWhatsapp);
 // Agrega la imagen al documento 
 aWhatsapp.appendChild(imgwhatsapp); 
 
+
+
 //crea link a Correo
 var aCorreo = document.createElement('a'); 
 aCorreo.title = "Correo"; 
@@ -64,9 +66,19 @@ footer.appendChild(aCorreo);
 aCorreo.appendChild(imgcorreo);
 
 
+//crea link a Contacto
+
+var aContacto = document.createElement('a'); 
+aContacto.title = "Contacto";
+aContacto.text = "Contacto";
+aContacto.id= "a-Contacto";
+aContacto.href = "./FormularioContacto.html"; 
+footer.appendChild(aContacto);
+// Agrega la imagen al documento 
+
 
 var pfooter = document.createElement("p");
-pfooter.innerText = "All rights reserved 2023 ©";
+pfooter.innerText = "Derechos Reservados 2023 ©";
 pfooter.id = "pfooter"
 footer.appendChild(pfooter);
 
