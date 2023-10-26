@@ -154,7 +154,7 @@ nav {
 
 /* // */
 body {
-    background-color: #2a9d8f;
+    background-color:var(--dark-font-solid);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     margin: 0; 
     padding: 0;
@@ -272,7 +272,7 @@ figcaption {
   }
   .flex-items a{
     text-decoration: none;
-    color: #1a56afc1;
+    color: var(--primary-900);
   }
   .flex-items a:hover{
     text-decoration: underline;
