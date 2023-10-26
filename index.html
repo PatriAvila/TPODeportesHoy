@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="./css/footer.css"> 
+    <script defer src="js/carousel.js"></script>
+   
     <script defer src="js/jsDeportesHoy.js"></script>
     <title>DeportesHoy  </title>
 </head>
@@ -56,7 +58,7 @@
         </section>    
 
         <section class="container-carrousel">        
-            <span class="scroll-left scroll-chevron">< </span>         
+            <span class="scroll-left scroll-chevron"><</span>         
             <span class="scroll-right scroll-chevron">></span> 
                 <section class="carousel">
                     <div class="carousel__container">
@@ -243,6 +245,11 @@ ACA EMPIEZAN LOS VIDEOS -->
     const scrollLeftvideo = document.querySelector(".scroll-leftvideo");
     const scrollRightvideo = document.querySelector(".scroll-rightvideo");
     
+    
+    const scrollElementIframe = document.querySelector(".carouselIframe");
+    const scrollLeftIframe = document.querySelector(".scroll-leftIframe");
+    const scrollRightIframe = document.querySelector(".scroll-rightIframe");
+    
     function moveScroll(displacement) {
       let currentPosition = scrollElement.scrollLeft;
       scrollElement.scrollTo(currentPosition + displacement, 0);
@@ -251,8 +258,13 @@ ACA EMPIEZAN LOS VIDEOS -->
     
     
     function moveScrollvideo(displacement) {
-      let currentPosition = scrollElementvideo.scrollLeftvideo;
+      let currentPosition = scrollElementvideo.scrollLeft;
       scrollElementvideo.scrollTo(currentPosition + displacement, 0);
+    }
+       
+    function moveScrollIframe(displacement) {
+      let currentPosition = scrollElementIframe.scrollLeft;
+      scrollElementIframe.scrollTo(currentPosition + displacement, 0);
     }
     
     scrollLeft.addEventListener("click", () => {
@@ -269,6 +281,14 @@ ACA EMPIEZAN LOS VIDEOS -->
     
     scrollRightvideo.addEventListener("click", () => {
       moveScrollvideo (400);
+    });
+    
+    scrollLeftIframe.addEventListener("click", () => {
+      moveScrollIframe(-400);
+    });
+    
+    scrollRightIframe.addEventListener("click", () => {
+      moveScrollIframe (400);
     });
     
     </script>
