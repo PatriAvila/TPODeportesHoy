@@ -82,6 +82,15 @@
     font-family: var(--base-font);
     font-size: var(--font-xxsmall);
 }
+
+#a-Contacto{
+  padding: var(--spacing-8);
+  
+  color: var(--dark-font-solid);
+  font-family: var(--base-font);
+  font-size: var(--font-xsmall); 
+  
+}
 .a-Whatsapp{
     text-decoration: none;
     color: var(--dark-font-solid);
@@ -141,7 +150,6 @@
   .footerIcon{
     width: 20px;
   }
-  
   
   
   
