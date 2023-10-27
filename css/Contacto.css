@@ -112,7 +112,9 @@ label{
    
 } 
 #idVolver{
-    
+
+    border-radius: 15px;
+    border: solid 4px;
     width: 30%;
     min-width: 130px;
     background-color: var(--light-font-solid);

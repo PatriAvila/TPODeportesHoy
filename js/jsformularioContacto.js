@@ -1,6 +1,7 @@
 ///////
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+document.addEventListener("DOMContentLoaded", function() 
+{
+document.getElementById("formulario").addEventListener('submit', validarFormulario); 
   });
     
   function validarFormulario(evento) {
@@ -11,15 +12,20 @@ document.addEventListener("DOMContentLoaded", function() {
       alert('No has escrito nada en el mensaje');
       return;
     }
-    // var clave = document.getElementById('clave').value;
-    // if (clave.length < 6) {
-    //   alert('La clave no es válida');
-    //   return;
-    // }
+    
 
     this.submit();
     alert("Gracias por Enviar sus datos")
+    
     Formulario.reset()
+    function closeCurrentWindow() {
+      window.close();
+    }
 
+}
+
+function irAPaginaInicio() {
+  // Redirigir a la página de inicio (puedes reemplazar "index.html" con la URL de tu página de inicio)
+  window.location.href = "index.html";
 }
   
