@@ -14,10 +14,7 @@ var imgfacebook = document.createElement('img');
 var imgwhatsapp = document.createElement('img'); 
 var imgcorreo = document.createElement('img'); 
 
-imginstagram.classList.add('mystyle'); // adding class
-imgfacebook.classList.add('mystyle'); // adding class
-imgwhatsapp.classList.add('mystyle'); // adding class
-imgcorreo.classList.add('mystyle'); // adding class
+
  
 // Establece la ubicación de la imagen 
 imginstagram.src = "./icons/instagram.png";  
@@ -55,15 +52,6 @@ footer.appendChild(aWhatsapp);
 // Agrega la imagen al documento 
 aWhatsapp.appendChild(imgwhatsapp); 
 
-
-
-//crea link a Correo
-var aCorreo = document.createElement('a'); 
-aCorreo.title = "Correo"; 
-aCorreo.id= "a-Correo";
-aCorreo.href = "http://example.com"; 
-footer.appendChild(aCorreo);
-aCorreo.appendChild(imgcorreo);
 
 
 //crea link a Contacto
