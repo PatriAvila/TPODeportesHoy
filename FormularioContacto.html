@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/Contacto.css">
+    <script defer src="./js/jsformularioContacto.js"></script>
+    
     <title>Document</title>
 </head>
 <body>
     <main>
        <IMG src="./imagenes/logoweb.ico">
       </IMG> 
-    <form id="fs-frm" name="Formulario de Contacto" accept-charset="utf-8"  method="post">
+
+   <form action="" class="formulario" id="formulario"> 
+
+    <!-- <form id="formulario" name="Formulario" accept-charset="utf-8"  method="post"> -->
     <fieldset id="fs-frm-inputs">
     <div class="camposFormulario">
-      <label for="NombreCompleto">Nombre</label>
-      <input type="text" name="Nombre Completo" id="idNombreCompleto" placeholder="Ingrese Nombre y Apellido" required="">
+      <label for="nombreCompleto">Nombre</label>
+      <input type="text" name="nombrecompleto" id="nombrecompleto" placeholder="Ingrese Nombre y Apellido" required="">
       <label for="email">Correo Electrónico</label>
-      <input type="email" name="Para" id="email-para-id" placeholder="Ingrese su email" required="">
-      <label for="Mensaje">Escriba su Mensaje</label>
-      <textarea rows="5" name="Mensaje" id="idMensaje" placeholder="Ingrese su mensaje." required=""></textarea>
+      <input type="email" name="correo" id="correo" placeholder="Ingrese su email" required="">
+      <label for="mensaje">Escriba su Mensaje</label>
+      <textarea rows="5" name="mensaje" id="mensaje" placeholder="Ingrese su mensaje." ></textarea>
       <input type="hidden" name="Asunto" id="idAsunto" value="Contacto de Envio">
     </div>
     </fieldset>
@@ -33,6 +38,7 @@
   </div>
 </div>
  
+
 </form>
 </main>
 
