@@ -99,8 +99,9 @@ padding: 0px;
 filter: brightness(120%);
 }
 pre{
-  font-size:var(--font-jumbo);
-  letter-spacing: 1 px;
+  font-family: var(--base-font);
+  font-size:var(--font-xlarge);
+  
 }
 .navbar__menu {
   gap: var(--spacing-8);
@@ -140,7 +141,6 @@ nav {
   z-index: 999;
 }
 #menu-hamburguesa ul li a {
-  color: var(--light-font-solid);
   color: var(--dark-font-solid);
   font-size: var(--font-small);
   font-family: var(--base-font);

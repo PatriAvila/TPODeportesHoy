@@ -175,19 +175,24 @@
                         
             </div>
   <footer class="footer">
-    <!-- <div class="social-icons">
-        <a href="https://www.instagram.com/" target="_blank"><img src="/img/Ig-Logo.png" alt="Instagram"></a>
-        <a href="https://ar.linkedin.com/" target="_blank"><img src="/img/linkedin-logo.png" alt="LinkedIn"></a>
-        <a href="mailto:jonathanpantano17@gmail.com"><img src="/img/gmail.png" alt="Gmail"></a>
-    </div>
-    <p>&copy; 2023 Derechos Reservados</p> -->
-   <!--INICIO footer con navegacion  --->
-   
-     </style>
+  
 
 </footer>
+<!-- Para mostrar y ocultar el menú hamburguesa al hacer clic en el botón, -->
+<script>
+
+  document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+      var menu = document.getElementById("menu-hamburguesa");
+      
+      if (menu.style.display != "block") {
+          menu.style.display = "block";
+      } else {
+          menu.style.display = "none";
+      }
+  });
 
 
+</script>
 
 </footer>
 <script src="/MenuResponsive.js"></script>

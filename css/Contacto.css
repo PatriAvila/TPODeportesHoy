@@ -47,40 +47,22 @@ ul {
     font-size: var(--font-xsmall); 
   }
   img{
-    width: 30%;
+    width: 25%;
     
 
   }
-/* 
-#fs-frm{
-    display:grid;
-    grid:
-    "Nombre" 
-    "email"
-    "Mensaje"
-}
-#idNombreCompleto{
-    grid-area: Nombre;
-}
-#email-para-id{
-    grid-area: email;
-}
-#idMensaje{
-    grid-area: Mensaje;
-} */
+
 .camposFormulario{
     display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: start;
+  align-items: center;
   position: relative;
   height: auto;
-  padding-left: 50px;
   min-width: 300px;
 }
 input ,textarea {
     width: 80%;
-    /* border-color: #193793; */
     border-radius: 15px;
     border: solid 4px;
 }
@@ -97,7 +79,7 @@ body{
     flex-direction: column;
     background-color: var(--dark-bG-solid);
     align-items: center;
-    padding-top: 100px;
+    padding-top: 5px;
 
 }    
 #fs-frm-inputs{
@@ -123,18 +105,37 @@ label{
 }
 
 #idEnviar{
-    width: 20%;
-    min-width: 180px;
+    width: 30%;
+    
+    min-width: 130px;
+    background-color: var(--light-font-solid);
+   
+} 
+#idVolver{
+    
+    width: 30%;
+    min-width: 130px;
     background-color: var(--light-font-solid);
 } 
+
 .Enviar-Container
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   
     align-items: center;
     justify-content:center;
+    padding: 10px;
+    align-items:center;
+    justify-content: space-between;
     
    }
 
+   .Volver-container{
+    display: flex;
+    flex-direction: row;
+  
+    align-items: center;
+    justify-content:center;
+   }
 

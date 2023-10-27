@@ -133,8 +133,8 @@ header {
   filter: brightness(120%);
   }
   pre{
-    font-size:var(--font-jumbo);
-    letter-spacing: 1 px;
+    font-family: var(--base-font);
+    font-size:var(--font-xlarge);
   }
   .navbar__menu {
     gap: var(--spacing-8);
