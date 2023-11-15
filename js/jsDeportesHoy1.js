@@ -57,13 +57,7 @@ aWhatsapp.appendChild(imgwhatsapp);
 
 //crea link a Contacto
 
-var aContacto = document.createElement('a'); 
-aContacto.title = "Contacto";
-aContacto.text = "Contacto";
-aContacto.id= "a-Contacto";
-aContacto.href = "./FormularioContacto.html"; 
-footer.appendChild(aContacto);
-// Agrega la imagen al documento 
+
 
 
 var pfooter = document.createElement("p");
