@@ -4,51 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/footer.css"> 
-    <link rel="stylesheet" href="./css/Contacto.css">
     
     <link rel="stylesheet" href="../css/footer.css"> 
     <link rel="stylesheet" href="../css/Contacto.css">
-   
+    
+    
+    
     <script defer src="../js/jsformularioContacto.js"></script>
     
     <script defer src="../js/jsDeportesHoy.js"></script>
     <title>Document</title>
 </head>
 <body>
+
+  <header>
+    <nav class="navheader">
+        <section class="header-container">
+            <div class="header">
+                <h1>
+                    <pre>DeportesHoy </pre>
+                    
+                </h1>
+                <img class="logoDeportesHoy" src="../img/logoweb.png" alt="isotipod de la marca">
+               
+            </div>
+            <button id="boton-hamburguesa">
+                <span>&#9776;</span> Menú
+            </button>
+            <nav id="menu-hamburguesa">
+                <ul class="navbar__menu">
+                    <li class="navbar__item"> <a class="navbar__link" href="../index.html">Inicio</a></li>
+                    <li class="navbar__item"> <a class="navbar__link" href="futbol.html">Fútbol</a></li>
+                    <li class="navbar__item"> <a class="navbar__link" href="tenis copy.html">Tennis</a></li>
+                    <li class="navbar__item"> <a class="navbar__link" href="rugbygrupo.html">Rugby</a></li>
+                    <li class="navbar__item"> <a class="navbar__link" href="#Polo">Polo</a></li>
+                    <li class="navbar__item"> <a class="navbar__link" href="#Basket">Basket</a></li>
+                    <li class="navbar__item"> <a class="navbar__link" href="FormularioContacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>   
+    </nav>
+</header>
+
     <main>
-       <IMG src="../imagenes/logoweb.ico">
-        <IMG src="../imagenes/logoweb.ico">
-       
-
-   <form action="" class="formulario" id="formulario"> 
-
-    <!-- <form id="formulario" name="Formulario" accept-charset="utf-8"  method="post"> -->
-    <fieldset id="fs-frm-inputs">
-    <div class="camposFormulario">
-      <label for="nombreCompleto">Nombre</label>
-      <input type="text" name="nombrecompleto" id="nombrecompleto" placeholder="Ingrese Nombre y Apellido" >
-      <label for="email">Correo Electrónico</label>
-      <input type="email" name="correo" id="correo" placeholder="Ingrese su email" >
-      <label for="mensaje">Escriba su Mensaje</label>
-      <textarea rows="5" name="mensaje" id="mensaje" placeholder="Ingrese su mensaje." ></textarea>
-      <input type="hidden" name="Asunto" id="idAsunto" value="Contacto de Envio">
-    </div>
-    </fieldset>
-    <div class="Enviar-Container">
-    <input type="submit" id="idEnviar" value="Enviar ">
-     <!-- 
-    <div class="Enviar-Container">
-      <button id="idVolver" onclick="irAPaginaInicio()">Ir a Inicio</button>
-      -->
-      <!-- <input type="button" id="idVolver" value="Volver" onClick="history.go(-3);"> -->
+        <div class="contenedorFormulario">
+        
+            <form action="" class="formulario" id="formulario">
+                <img class="logo" src="../img/logoweb.png" alt="">
     
-
-  </div>
-</div>
- 
-
-</form>
+                <!-- <form id="formulario" name="Formulario" accept-charset="utf-8"  method="post"> -->
+                <fieldset id="fs-frm-inputs">
+                    <div class="camposFormulario">
+                        <label for="nombreCompleto">Nombre</label>
+                        <input type="text" name="nombrecompleto" id="nombrecompleto"
+                            placeholder="Ingrese Nombre y Apellido">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" name="correo" id="correo" placeholder="Ingrese su email">
+                        <label for="mensaje">Escriba su Mensaje</label>
+                        <textarea rows="5" name="mensaje" id="mensaje" placeholder="Ingrese su mensaje."></textarea>
+                        <input type="hidden" name="Asunto" id="idAsunto" value="Contacto de Envio">
+                    </div>
+                </fieldset>
+                <div class="Enviar-Container">
+                    <input type="submit" id="idEnviar" value="Enviar ">
+                    <!-- 
+        <div class="Enviar-Container">
+          <button id="idVolver" onclick="irAPaginaInicio()">Ir a Inicio</button>
+          -->
+                    <!-- <input type="button" id="idVolver" value="Volver" onClick="history.go(-3);"> -->
+    
+    
+                </div>
+        </div>
+        </div>
+    
+        </form>
 </main>
 <footer class="footer">
            
