@@ -18,7 +18,7 @@ a {
   --primary-solid: #193793;
   --primary-900: rgba(41, 91, 242, 0.777);
   --primary-300: rgb(255, 51, 51, 0.3);
-  --dark-solid: #57f29a;
+  --dark-solid: #d2edde ;
   --dark-bG-solid: #193793;
   --light-font-solid: #f0c168;
   --dark-font-solid:  #57f29a;
@@ -155,7 +155,7 @@ nav {
 
 /* // */
 body {
-    background-color:var(--dark-font-solid);
+    background-color:var(--dark-solid);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     margin: 0; 
     padding: 0;

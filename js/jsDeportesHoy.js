@@ -18,9 +18,11 @@ var imgcorreo = document.createElement('img');
  
 // Establece la ubicación de la imagen 
 imginstagram.src = "./icons/instagram.png";  
-imgfacebook.src = "./icons/facebook.png"
-imgwhatsapp.src = "./icons/whatsapp.png";  
-imgcorreo.src = "./icons/correo.png"
+
+imginstagram.src = "../icons/instagram.png";  
+imgfacebook.src = "../icons/facebook.png"
+imgwhatsapp.src = "../icons/whatsapp.png";  
+imgcorreo.src = "../icons/correo.png"
 
 
 //crea link a Instagram

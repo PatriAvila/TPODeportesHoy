@@ -4,15 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/footer.css"> 
     <link rel="stylesheet" href="./css/Contacto.css">
-    <script defer src="./js/jsformularioContacto.js"></script>
     
+    <link rel="stylesheet" href="../css/footer.css"> 
+    <link rel="stylesheet" href="../css/Contacto.css">
+   
+    <script defer src="../js/jsformularioContacto.js"></script>
+    
+    <script defer src="../js/jsDeportesHoy.js"></script>
     <title>Document</title>
 </head>
 <body>
     <main>
-       <IMG src="./imagenes/logoweb.ico">
-      </IMG> 
+       <IMG src="../imagenes/logoweb.ico">
+        <IMG src="../imagenes/logoweb.ico">
+       
 
    <form action="" class="formulario" id="formulario"> 
 
@@ -20,9 +27,9 @@
     <fieldset id="fs-frm-inputs">
     <div class="camposFormulario">
       <label for="nombreCompleto">Nombre</label>
-      <input type="text" name="nombrecompleto" id="nombrecompleto" placeholder="Ingrese Nombre y Apellido" required="">
+      <input type="text" name="nombrecompleto" id="nombrecompleto" placeholder="Ingrese Nombre y Apellido" >
       <label for="email">Correo Electrónico</label>
-      <input type="email" name="correo" id="correo" placeholder="Ingrese su email" required="">
+      <input type="email" name="correo" id="correo" placeholder="Ingrese su email" >
       <label for="mensaje">Escriba su Mensaje</label>
       <textarea rows="5" name="mensaje" id="mensaje" placeholder="Ingrese su mensaje." ></textarea>
       <input type="hidden" name="Asunto" id="idAsunto" value="Contacto de Envio">
@@ -30,10 +37,10 @@
     </fieldset>
     <div class="Enviar-Container">
     <input type="submit" id="idEnviar" value="Enviar ">
-  
+     <!-- 
     <div class="Enviar-Container">
       <button id="idVolver" onclick="irAPaginaInicio()">Ir a Inicio</button>
-  
+      -->
       <!-- <input type="button" id="idVolver" value="Volver" onClick="history.go(-3);"> -->
     
 
@@ -43,6 +50,9 @@
 
 </form>
 </main>
-
+<footer class="footer">
+           
+        
+</footer>
 </body>
 </html>
