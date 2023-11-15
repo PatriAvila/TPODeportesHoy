@@ -135,7 +135,7 @@ pre{
   padding: 5px 0;
 }
 nav {
-  position: fixed;
+  position: relative;
   z-index: 999;
 }
 #menu-hamburguesa ul li a {
@@ -163,6 +163,10 @@ nav {
 .contenedorFormulario{
   padding-top: 50px;
   padding-bottom: 50px;
+  width: 95%;
+  
+  
+
 }
 .logo{
   width: 20%;
@@ -187,7 +191,6 @@ form{
     flex-direction: column;
     text-align: left ;
     
-    min-width: 300px;
     align-items: center;
 }
 body{
@@ -204,14 +207,14 @@ body{
 }
 main{
     display: flex;
-    background-color: var(--dark-solid);
     flex-direction: column;
     text-align: left ;
-    width: 60%;
+    
     min-width: 300px;
     align-items: center;
     border-radius: 15px;
-}
+    background:  #d2edde;
+  }   
 label{
     font-size: var(--font-small);
 }
@@ -268,30 +271,14 @@ background:var(--primary-900);
 
 
 
-   
-#boton-hamburguesa {
-  display: none;
-}
-
-#menu-hamburguesa {
-  display: block;
-  background-color: transparent;
-  max-height: initial;
-  overflow: initial;
-}
-
-#menu-hamburguesa ul {
-  display: flex;
-  justify-content: left;
-}
-
-#menu-hamburguesa ul li {
-  padding: 5px 5px;
-}
  
 @media (min-width: 768px) {
   #boton-hamburguesa {
     display: none;
+  }
+  #contenedorFormulario{
+    width: 50%;
+    padding-right: 10px;
   }
   #menu-hamburguesa {
     display: block;
@@ -309,4 +296,6 @@ background:var(--primary-900);
   #menu-hamburguesa ul li {
     padding: 0px 5px 5px 7px;
   }
+
+  
 }

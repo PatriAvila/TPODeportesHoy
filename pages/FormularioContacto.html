@@ -47,7 +47,7 @@
 </header>
 
     <main>
-        <div class="contenedorFormulario">
+        <div class="contenedorFormulario" id="contenedorFormulario">
         
             <form action="" class="formulario" id="formulario">
                 <img class="logo" src="../img/logoweb.png" alt="">
@@ -84,5 +84,18 @@
            
         
 </footer>
+<script>
+    document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+        var menu = document.getElementById("menu-hamburguesa");
+        
+        if (menu.style.display != "block") {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    });
+
+</script>
+
 </body>
 </html>
