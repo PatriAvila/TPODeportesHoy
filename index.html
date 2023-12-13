@@ -2,19 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="icon" href="./favicon/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="./css/footer.css"> 
-    
     <script defer src="./js/jsDeportesHoy1.js"></script>
+    
+    
+    <link rel="icon" href="./favicon/favicon.ico">
+    
+      
+    <link rel="stylesheet" href="./css/comments.css">
+    
+    <link rel="stylesheet" href="./css/footer.css">
+    
+    <link rel="stylesheet" href="./css/estilo.css">s
     <title>DeportesHoy  </title>
 </head>
 <body>
-    <!-- //INICIO HEADER -->
-    <header >
+    <!-- //INICIO HEADER 
+    -->
+    <header id="header">
+        
+        
         <nav class="navheader">
             <section class="header-container">
                 <div class="header">
@@ -34,9 +41,10 @@
                         <li class="navbar__item"> <a class="navbar__link" href="./pages/futbol.html">Fútbol</a></li>
                         <li class="navbar__item"> <a class="navbar__link" href="./pages/tenis copy.html">Tennis</a></li>
                         <li class="navbar__item"> <a class="navbar__link" href="./pages/rugbygrupo.html">Rugby</a></li>
-                        <li class="navbar__item"> <a class="navbar__link" href="#Polo">Polo</a></li>
-                        <li class="navbar__item"> <a class="navbar__link" href="#Basket">Basket</a></li>
+        
                         <li class="navbar__item"> <a class="navbar__link" href="./pages/FormularioContacto.html">Contacto</a></li>
+                        <li class="navbar__item"> <a class="navbar__link" href="./pages/Comments.html">Comentarios</a></li>
+                        <li class="navbar__item"> <a class="navbar__link" href="./pages/Videos.html">Videos</a></li>
                     
                     </ul>
                 </nav>
@@ -140,14 +148,14 @@ ACA EMPIEZAN LOS VIDEOS
             <div class="carousel__container">
                 <div class="carousel-item">
                     <h2>Eliminatorias 2026</h2>
-                    <iframe class="itemvideo" src="https://www.youtube.com/embed/tUc_cP9LN24"
+                    <iframe class="itemvideo"  id="video1" src="https://www.youtube.com/embed/tUc_cP9LN24"
                         title="ELIMINATORIAS SUDAMERICANAS 2026" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
                 <div class="carousel-item">
                     <h2>Argentina Campeon Copa Davis 2016</h2>
-                    <iframe class="itemvideo" src="https://www.youtube.com/embed/ChIRJ3c9yFc"
+                    <iframe class="itemvideo" id="video2" src="https://www.youtube.com/embed/ChIRJ3c9yFc"
                         title="Argentina Campeon Copa Davis 2016" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -155,7 +163,7 @@ ACA EMPIEZAN LOS VIDEOS
                 <div class="carousel-item">
                     <h2>Victoria Los Pumas vs All Blacks!
                     </h2>
-                    <iframe class="itemvideo" src="https://www.youtube.com/embed/RE85OEm8C1M"
+                    <iframe class="itemvideo"   id="video3" src="https://www.youtube.com/embed/RE85OEm8C1M"
                         title="Victoria Los Pumas vs All Blacks"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -163,7 +171,7 @@ ACA EMPIEZAN LOS VIDEOS
                 </div>
                 <div class="carousel-item">
                     <h2>La Dolfina vs. Ellerstina Pilot</h2>
-                    <iframe class="itemvideo" src="https://www.youtube.com/embed/zv6m6bhdbAU"
+                    <iframe class="itemvideo"  id="video4" src="https://www.youtube.com/embed/zv6m6bhdbAU"
                         title="56th Jockey Club Open Semifinal 2021 La Dolfina vs. Ellerstina Pilot" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -180,7 +188,51 @@ ACA EMPIEZAN LOS VIDEOS
     
     </section>
 
+
+    <div class="contenedorcomentarios">
+        <h1 class="h1comentarios">
+            Esto es lo que comentan nuestros usuarios
+        </h1>
     
+        
+    
+            <div id="app" class="container">
+                <h1>Comentarios</h1>
+                
+                <div v-if="error">
+                    <p>Lo sentimos , ........</p>
+                </div>
+                <div v-else>
+                    <section v-if="cargando">
+                        <div class="spinner-border"></div>
+                        <p>Cargando .....</p>
+                    </section>
+                    <section v-else>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr class="trfilas" v-for="comentario in comentarios">
+                                        <td>{{comentario.comentariosusuario}}</td>
+                                        <td>{{comentario.comentariosdetalle}}</td>
+                                        
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+    
+    </div>
+
+    
+
+
+
+
+
+
     </main>
 
 
@@ -190,6 +242,9 @@ ACA EMPIEZAN LOS VIDEOS
             
                      
         </footer>
+
+     
+
 
 
      <!-- Para mostrar y ocultar el menú hamburguesa al hacer clic en el botón, -->
@@ -261,6 +316,26 @@ ACA EMPIEZAN LOS VIDEOS
     });
     
     </script>
+    <script
+
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="./js/comments.js"></script>
+
+    
+
+
+
+
 
 </body>
 
