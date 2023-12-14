@@ -60,25 +60,24 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 </header>
 <main class="mainvideo">
 <div class="container" id="app">
-<form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
+<form style="background-color: aliceblue;margin:10px auto ; width: 350px; padding: 20px;">
 <h2>Editar video </h2>
-<p>videostitulo:{{videostitulo}}</p>
 
 
 <div class="mb-3">
-<label for="idvideos">Id</label>
+<label class="labeleditar" for="idvideos">Id</label>
 <input type="number" name="idvideos" id="idvideos" disabled v-model="idvideos" >
 </div>
 <div class="mb-3">
-<label for="videostitulo">Titulo</label>
+<label class="labeleditar" for="videostitulo">Titulo</label>
 <input type="text" name="videostitulo" id="videostitulo" v-model="videostitulo">
 </div>
 <div class="mb-3">
-<label for="videosdetalle">Detalle</label>
+<label class="labeleditar" for="videosdetalle">Detalle</label>
 <input type="text" name="videosdetalle" id="videosdetalle" v-model="videosdetalle">
 </div>
 <div class="mb-3">
-<label for="videosusuario">Usuario</label>
+<label class="labeleditar" for="videosusuario">Usuario</label>
 <input type="text" name="videosusuario" id="videosusuario" v-model="videosusuario">
 <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
 </form>

@@ -632,8 +632,10 @@ td{
   color: var(--light-font-solid);
   font-size: var(--font-xlarge);
 }
-
-
+.comentariousuario
+{
+  width: 10%;
+  }
 table, th, td{
   border: var(--light-font-solid);
   }

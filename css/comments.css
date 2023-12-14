@@ -346,6 +346,11 @@ background:var(--primary-900);
 }
 
 
+
+.labeleditar
+{
+  width: 20%;
+  }
 table, th, td{
   border: var(--light-font-solid);
   }

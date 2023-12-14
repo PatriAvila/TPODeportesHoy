@@ -65,19 +65,19 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 
 
 <div class="mb-3">
-<label for="idcomentarios">Id</label>
+<label class="labeleditar"  for="idcomentarios">Id</label>
 <input type="number" name="idcomentarios" id="idcomentarios" disabled v-model="idcomentarios" >
 </div>
 <div class="mb-3">
-<label for="comentariostitulo">Titulo</label>
+<label  class="labeleditar" for="comentariostitulo">Titulo</label>
 <input type="text" name="comentariostitulo" id="comentariostitulo" v-model="comentariostitulo">
 </div>
 <div class="mb-3">
-<label for="comentariosdetalle">Detalle</label>
+<label class="labeleditar" for="comentariosdetalle">Detalle</label>
 <input type="text" name="comentariosdetalle" id="comentariosdetalle" v-model="comentariosdetalle">
 </div>
 <div class="mb-3">
-<label for="comentariosusuario">Usuario</label>
+<label class="labeleditar" for="comentariosusuario">Usuario</label>
 <input type="text" name="comentariosusuario" id="comentariosusuario" v-model="comentariosusuario">
 <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
 </form>

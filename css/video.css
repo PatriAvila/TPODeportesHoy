@@ -189,7 +189,13 @@ input ,textarea {
 main{
 font-size: 80%;
 
-} 
+}
+.mainvideo 
+{
+  padding-top: 200px;
+  padding-bottom: 100px;
+  
+  }
 .maincomments{
   padding-top: 160px;
   
@@ -344,6 +350,11 @@ background:var(--primary-900);
 
 }
 
+
+.labeleditar
+{
+  width: 20%;
+  }
 .tdtitulo{
   width: 40%;}
 table, th, td{
